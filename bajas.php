@@ -18,7 +18,7 @@ if($Conexion){
 }else{
 	echo "la conexion ha fallado "."<br>";
 }
-
+//para borrar
 $cadena= "DELETE FROM persona  WHERE apellido = '$ape'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
