@@ -1,5 +1,5 @@
 <?php
-include 'menu.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -7,7 +7,6 @@ include 'menu.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Modificacion</title>
-	<link rel="stylesheet" href="css/formAltas.css">
 </head>
 <body>
 
@@ -21,7 +20,6 @@ include 'menu.php';
 
 		<br><br>
 		Campos a modificar:<br>
-
 		<div class="grupoInputs">
 		<label for="nombre">Nombre:</label>
 		<input type="text" name="nombre"><br>

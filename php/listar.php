@@ -1,5 +1,4 @@
 <?php
-include 'menu.php';
 ?>
 <html lang="es">
 	<head>

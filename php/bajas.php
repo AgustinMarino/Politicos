@@ -5,7 +5,7 @@
 
 <?php 
 
-include 'menu.php';
+include 'index.php';
 
 
 $ape = $_POST['apellido'];
@@ -42,6 +42,5 @@ if($resultado){
 </head>
 <body>
 	<a href="form-bajas.php">Volver</a>
-	
 </body>
 </html>
