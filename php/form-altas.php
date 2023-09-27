@@ -12,6 +12,11 @@
     <h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 
+	    <div class="grupoInputs">
+		<label for="usuario">Usuario:</label>
+		<input type="text" name="apellido"><br>
+		</div>
+		
 		<div class="grupoInputs">
 		<label for="apellido">Apellido:</label>
 		<input type="text" name="apellido"><br>
@@ -33,7 +38,7 @@
 	    </div>
 
 		<div class="btn-submit">
-		<input type="submit" value="Grabar"><br>
+		<input type="submit" value="Grabar"  ><br>
 	    </div>
 	</form>
 </div>

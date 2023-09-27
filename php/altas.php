@@ -9,7 +9,7 @@
 <?php 
 
 include "../index.php";
-
+$usu = $_POST['usuario'];
 $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
@@ -18,7 +18,7 @@ $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
+echo "<h3>".$ape."<h3>".$usu."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>";
 
 if($foto != "none")
 {
@@ -27,10 +27,10 @@ if($foto != "none")
 	$contenido = addslashes($contenido);
 	fclose($fp);
 
-	$base = "gestionsubir";
+	$base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad,foto) VALUES ('$ape','$nom','$ed','$contenido')";
+$cadena= "INSERT INTO persona(apellido, nombre, edad,foto) VALUES ('$usu','$ape','$nom','$ed','$contenido')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

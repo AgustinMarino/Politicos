@@ -13,8 +13,8 @@
 	<h3 class="altaTitulo" style="text-align: center;">FORMULARIO DE BAJA</h3>
 	<form class="altaInput" action="php/bajas.php" method="POST" >
 	    <div class="grupoInputs">
-		<label for="apellido">Apellido:</label>
-        <input type="text" name="apellido"><br>	
+		<label for="usuarioi">Usuario:</label>
+        <input type="text" name="usuario"><br>	
         </div>
 		
 		<div class="btn-submit">

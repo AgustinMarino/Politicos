@@ -14,7 +14,7 @@
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
 	<form class="altaInput" action="modificacion.php" method="POST" >
 	<div class="grupoInputs">
-		<label for="apellido">Campo Clave Apellido:</label>
+		<label for="usuario">Nombre de  Usuario:</label>
 		<input type="text" name="apellido"><br>	
     </div>
 

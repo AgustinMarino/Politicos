@@ -8,9 +8,9 @@
 include 'index.php';
 
 
-$ape = $_POST['apellido'];
+$usu = $_POST['usuario'];
 
-$base = "gestionsubir";
+$base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo "la conexion fue exitosa "."<br>";
@@ -19,7 +19,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 //para borrar
-$cadena= "DELETE FROM persona  WHERE apellido = '$ape'";  
+$cadena= "DELETE FROM persona  WHERE usuario = '$usu'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
 
