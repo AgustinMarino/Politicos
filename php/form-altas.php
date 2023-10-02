@@ -1,10 +1,13 @@
 <?php
+
+include "menu.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Formulario de Altas</title>
 </head>
 <body>
@@ -14,7 +17,7 @@
 
 	    <div class="grupoInputs">
 		<label for="usuario">Usuario:</label>
-		<input type="text" name="apellido"><br>
+		<input type="text" name="usuario"><br>
 		</div>
 		
 		<div class="grupoInputs">
@@ -38,7 +41,7 @@
 	    </div>
 
 		<div class="btn-submit">
-		<input type="submit" value="Grabar"  ><br>
+		<input type="submit" value="Grabar"><br>
 	    </div>
 	</form>
 </div>

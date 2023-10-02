@@ -2,6 +2,7 @@
 <html lang="es">
 </html>
 <?php 
+$usu = $_POST['usuario'];
 $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
@@ -15,7 +16,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed' WHERE apellido = '$ape'";
+$cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE apellido = '$ape'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

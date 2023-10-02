@@ -1,5 +1,6 @@
 <?php
 
+include "menu.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -7,6 +8,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Modificacion</title>
+	
 </head>
 <body>
 
@@ -15,7 +17,7 @@
 	<form class="altaInput" action="modificacion.php" method="POST" >
 	<div class="grupoInputs">
 		<label for="usuario">Nombre de  Usuario:</label>
-		<input type="text" name="apellido"><br>	
+		<input type="text" name="usuario"><br>	
     </div>
 
 		<br><br>

@@ -1,4 +1,6 @@
 <?php
+
+include "menu.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +13,7 @@
 
 <div class="container">
 	<h3 class="altaTitulo" style="text-align: center;">FORMULARIO DE BAJA</h3>
-	<form class="altaInput" action="php/bajas.php" method="POST" >
+	<form class="altaInput" action="bajas.php" method="POST" >
 	    <div class="grupoInputs">
 		<label for="usuarioi">Usuario:</label>
         <input type="text" name="usuario"><br>	

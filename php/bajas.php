@@ -5,7 +5,7 @@
 
 <?php 
 
-include 'index.php';
+include "menu.php";
 
 
 $usu = $_POST['usuario'];
