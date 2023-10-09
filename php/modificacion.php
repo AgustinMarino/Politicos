@@ -1,19 +1,20 @@
-
+<?php 
+include "menu.php";
+?>
 <html lang="es">
 </html>
 <?php 
 $usu = $_POST['usuario'];
-$ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 
 $base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
-	echo "la conexion fue exitosa "."<br>";
+	echo " "."<br>";
 
 }else{
-	echo "la conexion ha fallado "."<br>";
+	echo ""."<br>";
 }
 
 $cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE usuario = '$usu'";
@@ -21,7 +22,7 @@ $cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE usuario = '$us
 $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
-	echo "se ha modificado un registro"."<br>";
+	echo ""."<br>";
 
 }else{
 	echo "NO se ha modificado un registro"."<br>";
