@@ -7,7 +7,7 @@ $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 
-$base = "gestionsubir";
+$base = "gestion";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo "la conexion fue exitosa "."<br>";
@@ -16,7 +16,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE apellido = '$ape'";
+$cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE usuario = '$usu'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
