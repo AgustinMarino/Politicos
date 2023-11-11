@@ -16,8 +16,8 @@ include "menu.php";
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
 	<form class="altaInput" action="modificacion.php" method="POST" >
 	<div class="grupoInputs">
-		<label for="usuario">Nombre de  Usuario:</label>
-		<input type="text" name="usuario"><br>	
+		<label for="apellido">apellido:</label>
+		<input type="text" name="apellido"><br>	
     </div>
 
 		<br><br>
@@ -28,8 +28,23 @@ include "menu.php";
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="edad">Edad:</label>
-		<input type="text" name="edad"><br>
+		<label for="cargo">cargo:</label>
+		<input type="text" name="cargo"><br>
+	    </div>
+
+		<div class="grupoInputs">
+		<label for="fecha_nacimiento">fecha de nacimiento:</label>
+		<input type="text" name="fecha_nacimiento"><br>
+	    </div>
+
+		<div class="grupoInputs">
+		<label for="educacion">Educacion:</label>
+		<input type="text" name="educacion"><br>
+	    </div>
+		
+		<div class="grupoInputs">
+		<label for="biografia">Biografia:</label>
+		<input type="text" name="biografia"><br>
 	    </div>
 
 		<div class="btn-submit">

@@ -1,14 +1,19 @@
-<?php 
+<?php
+include "template/cabecera.php";
 include "menu.php";
 ?>
 <html lang="es">
 </html>
 <?php 
-$usu = $_POST['usuario'];
 $nom = $_POST['nombre'];
+$ape = $_POST['nombre'];
+$ca = $_POST ['cargo'];
+$naci = $_POST ['fecha_nacimiento'];
+$edu = $_POST ['educacion'];
+$bio = $_POST ['biografia'];
 $ed = $_POST['edad'];
 
-$base = "gestion";
+$base = "Politicaargentina2";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 if($Conexion){
 	echo " "."<br>";
@@ -17,7 +22,8 @@ if($Conexion){
 	echo ""."<br>";
 }
 
-$cadena = "UPDATE persona SET nombre = '$nom', edad = '$ed' WHERE usuario = '$usu'";
+$cadena = "UPDATE politicos SET nombre = '$nom', cargo = '$ca', fecha_nacimiento = '$naci'
+, educacion = '$edu' , biografia = '$bio' WHERE apellido = '$ape'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
@@ -36,7 +42,7 @@ if($resultado){
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Mod</title>
 </head>
 <body>
 	<a href="form-modificacion.php">Volver</a>

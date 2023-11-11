@@ -1,5 +1,6 @@
-
-
+<?php
+include "template/cabecera.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +18,7 @@
         <a href="form-altas.php">Alta</a><br>
         <a href="form-bajas.php">Bajas</a><br>
         <a href="form-modificacion.php">Modificaciones</a><br>
-        <a href="listar.php">Listado de personas</a><br>
+        <a href="listar.php">Listado de politicos</a><br>
         
 
         </div>

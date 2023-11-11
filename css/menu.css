@@ -87,23 +87,13 @@ body {
     
 }
 
-/* Estilos para los enlaces */
-a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    color: #6a5f86; /* Violeta suave */
-    border: 2px solid #6a5f86;
-    border-radius: 5px;
-    margin: 10px auto; /* Centrar horizontalmente */
-    width: 70%; /* Ancho */
-    transition: background-color 0.3s, color 0.3s;
-}
 
 /* Estilos al pasar el cursor sobre los enlaces */
 a:hover {
-    background-color: #6a5f86; /* Violeta suave */
+    background-color: hsl(257, 17%, 45%); /* Violeta suave */
+    padding:2px;
+    border: 2cm;
+    border-radius: 5px;    
     color: white;
 }
 

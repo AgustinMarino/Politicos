@@ -16,8 +16,8 @@ include "menu.php";
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 
 	    <div class="grupoInputs">
-		<label for="usuario">Usuario:</label>
-		<input type="text" name="usuario"><br>
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre"><br>
 		</div>
 		
 		<div class="grupoInputs">
@@ -26,18 +26,29 @@ include "menu.php";
 		</div>
 		
 		<div class="grupoInputs">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre"><br>
+		<label for="cargo">Cargo:</label>
+		<input type="text" name="cargo"><br>
         </div>
 
 		<div class="grupoInputs">
-		<label for="edad">Edad:</label>
-		<input type="number" name="edad"><br>
+		<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+		<input type="number" name="fecha_nacimiento"><br>
 	    </div>
 
+		
+	    <div class="grupoInputs">
+		<label for="educacion">Educacion:</label>
+		<input type="text" name="educacion"><br>
+		</div>
+
+	    <div class="grupoInputs">
+		<label for="biografia">Biografia:</label>
+		<input type="text" name="biografia"><br>
+		</div>
+
 		<div class="grupoInputs">
-		<label for="foto">Archivo</label>
-		<input type="file" name="foto"><br>
+		<label for="imagen">Archivo</label>
+		<input type="file" name="imagen"><br>
 	    </div>
 
 		<div class="btn-submit">
