@@ -32,7 +32,7 @@ include "menu.php";
 
 		<div class="grupoInputs">
 		<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-		<input type="number" name="fecha_nacimiento"><br>
+		<input type="date" name="nacimiento" class="form-control" required>
 	    </div>
 
 		
