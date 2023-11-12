@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <ul class="nav navbar-nav">
            
-            <a class="nav-link" href="/index.php">Inicio</a>
+            <a class="nav-link" href="Politicos/index.php">Inicio</a>
             <a class="nav-link" href="/politicaargentina.php">Politica Argentina</a>
         </ul>
     </nav>
