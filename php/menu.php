@@ -1,5 +1,5 @@
 <?php
-include "template/cabecera.php";
+include "cabecera.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,6 +8,7 @@ include "template/cabecera.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu general de Politicos</title>
     <link rel="stylesheet" href="../css/menu.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
     <div class="header">
