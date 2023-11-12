@@ -26,40 +26,29 @@ include "menu.php";
 	<form class="altaInput" action="altas.php" method="POST" enctype="multipart/form-data">
 
 	    <div class="grupoInputs">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre"><br>
+		<label for="nombre_partido">Nombre del Partido:</label>
+		<input type="text" name="nombre_partido"><br>
 		</div>
 		
 		<div class="grupoInputs">
-		<label for="apellido">Apellido:</label>
-		<input type="text" name="apellido"><br>
+		<label for="ideologia">Ideologia:</label>
+		<input type="text" name="ideologia"><br>
 		</div>
 		
 		<div class="grupoInputs">
-		<label for="cargo">Cargo:</label>
-		<input type="text" name="cargo"><br>
-        </div>
-
-		<div class="grupoInputs">
-		<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-		<input type="date" name="nacimiento" class="form-control" required>
-	    </div>
-
+   		 <label for="aniofundacion">Año de Fundación:</label>
+    		<input type="number" name="aniofundacion" min="1700" max="2099" step="1">
+		</div>
 		
 	    <div class="grupoInputs">
-		<label for="educacion">Educacion:</label>
-		<input type="text" name="educacion"><br>
+		<label for="lideractual">Lider Actual:</label>
+		<input type="text" name="lideractual"><br>
 		</div>
 
 	    <div class="grupoInputs">
-		<label for="biografia">Biografia:</label>
-		<input type="text" name="biografia"><br>
+		<label for="sedecentral">Sede Central:</label>
+		<input type="text" name="sedecentral"><br>
 		</div>
-
-		<div class="grupoInputs">
-		<label for="imagen">Archivo</label>
-		<input type="file" name="imagen"><br>
-	    </div>
 
 		<div class="btn-submit">
 		<input type="submit" value="Grabar"><br>

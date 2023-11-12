@@ -83,18 +83,17 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #f7f7f7; /* Violeta suave más oscuro */
+    background-color: #534a6f; /* Violeta suave más oscuro */
     
 }
+
+/* Estilos para los enlaces */
 
 
 /* Estilos al pasar el cursor sobre los enlaces */
 a:hover {
-    background-color: hsl(257, 17%, 45%); /* Violeta suave */
-    padding:2px;
-    border: 2cm;
-    border-radius: 5px;    
-    color: rgb(255, 255, 255);
+    background-color: #6a5f86; /* Violeta suave */
+    color: white;
 }
 
 h3{

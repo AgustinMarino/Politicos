@@ -1,57 +1,69 @@
-<?php 
+<?php
 include "menu.php";
 ?>
+
 <html lang="es">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="../css/respuestas.css">
-	</head>
-	<body>
-	<h3 class="tablatitulo">LISTADO DE LOS REGISTRO DE LA TABLA</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Políticos</title>
+    <link rel="stylesheet" href="../css/respuestas.css">
+</head>
+<style>
+    body {
+        margin-top: -24;
+    }
 
-	<table class="tabla">
-		<caption class="ttitulo">Lista de usuarios</caption>
-		<thead class="ttitulo">
-			<tr>
-			<th>ID</th>
-			<th>Nombre</th>
-			<th>Apellido</th>
-			<th>Cargo</th>
-			<th>Fecha de Nacimiento</th>
-			<th>Educacion</th>
-			<th>Biografia</th>
-			<th>Foto</th>
-			</tr>
-		</thead>
+    .navbar {
+        margin-top: 0;
+    }
+</style>
+<body>
+    <h3 class="tablatitulo">LISTADO DE LOS REGISTROS DE LA TABLA</h3>
 
-		<?php 
+    <table class="tabla">
+        <caption class="ttitulo">Lista de Políticos</caption>
+        <thead class="ttitulo">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cargo</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Educación</th>
+                <th>Biografía</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
 
-		$base = "Politicaargentina2";
-		$Conexion =  mysqli_connect("localhost","root","",$base);
+        <?php 
+        $base = "Politicaargentina2";
+        $Conexion = mysqli_connect("localhost", "root", "", $base);
 
-		$cadena= "SELECT * FROM politicos ";
+        if ($Conexion) {
+            $cadena = "SELECT * FROM politicos";
+            $consulta = mysqli_query($Conexion, $cadena);
 
-		$consulta = mysqli_query($Conexion, $cadena);
-
-		// Verifica si hay resultados antes de intentar acceder a ellos
-		if (mysqli_num_rows($consulta) > 0) {
-			// Obtiene el primer registro de la tabla
-			$registro = mysqli_fetch_row($consulta);
-		
-			echo "<tr class='trmain'>";
-			echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th>".$registro[3]."</th><th>".$registro[4]."</th><th>".$registro[5]."</th><th>".$registro[6]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[7])."' width='200px'/></th>";
-			echo "</tr>";
-		
-			// Muestra el resto de los registros de la tabla
-			while ($registro = mysqli_fetch_row($consulta)) {
-				echo "<tr class='trmain'>";
-				echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th>".$registro[3]."</th><th>".$registro[4]."</th><th>".$registro[5]."</th><th>".$registro[6]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[7])."' width='200px'/></th>";
-				echo "</tr>";
-			}
-		} else {
-			// No hay resultados
-			echo "<tr><td colspan='8'>No hay registros en la tabla.</td></tr>";
-		}
-		
+            if ($consulta) {
+                while ($registro = mysqli_fetch_assoc($consulta)) {
+                    echo "<tr class='trmain'>";
+                    echo "<th>".(isset($registro['id']) ? $registro['id'] : '')."</th>";
+                    echo "<th>".$registro['nombre']."</th>";
+                    echo "<th>".$registro['apellido']."</th>";
+                    echo "<th>".$registro['cargo']."</th>";
+                    echo "<th>".$registro['fecha_nacimiento']."</th>";
+                    echo "<th>".$registro['educacion']."</th>";
+                    echo "<th>".$registro['biografia']."</th>";
+                    echo "<th><img src='imagen.php?id=".(isset($registro['id']) ? $registro['id'] : '')."' width='200px'/></th>";
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='8'>Error en la consulta: ".mysqli_error($Conexion)."</td></tr>";
+            }
+        } else {
+            echo "<tr><td colspan='8'>Error de conexión a la base de datos: ".mysqli_connect_error()."</td></tr>";
+        }
+        ?>
+    </table>
+</body>
+</html>

@@ -26,36 +26,32 @@ ii
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
 	<form class="altaInput" action="modificacion.php" method="POST" >
 	<div class="grupoInputs">
-		<label for="apellido">apellido:</label>
-		<input type="text" name="apellido"><br>	
+		<label for="nombre_partido">Nombre del Partido:</label>
+		<input type="text" name="nombre_partido"><br>	
     </div>
 
 		<br><br>
 		Campos a modificar:<br>
-		<div class="grupoInputs">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre"><br>
-	    </div>
-
-		<div class="grupoInputs">
-		<label for="cargo">cargo:</label>
-		<input type="text" name="cargo"><br>
-	    </div>
-
-		<div class="grupoInputs">
-		<label for="fecha_nacimiento">fecha de nacimiento:</label>
-		<input type="text" name="fecha_nacimiento"><br>
-	    </div>
-
-		<div class="grupoInputs">
-		<label for="educacion">Educacion:</label>
-		<input type="text" name="educacion"><br>
-	    </div>
 		
 		<div class="grupoInputs">
-		<label for="biografia">Biografia:</label>
-		<input type="text" name="biografia"><br>
-	    </div>
+		<label for="ideologia">Ideologia:</label>
+		<input type="text" name="ideologia"><br>
+		</div>
+		
+		<div class="grupoInputs">
+   		 <label for="aniofundacion">Año de Fundación:</label>
+    		<input type="number" name="aniofundacion" min="1700" max="2099" step="1">
+		</div>
+		
+	    <div class="grupoInputs">
+		<label for="lideractual">Lider Actual:</label>
+		<input type="text" name="lideractual"><br>
+		</div>
+
+	    <div class="grupoInputs">
+		<label for="sedecentral">Sede Central:</label>
+		<input type="text" name="sedecentral"><br>
+		</div>
 
 		<div class="btn-submit">
 		<input type="submit" value="Modificar"><br>

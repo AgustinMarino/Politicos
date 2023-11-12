@@ -5,18 +5,20 @@ include "menu.php";
 <html lang="es">
 </html>
 <?php 
-$nom = $_POST['nombre'];
-$ape = $_POST['apellido'];
-$ca = $_POST ['cargo'];
-$naci = $_POST ['fecha_nacimiento'];
-$edu = $_POST ['educacion'];
-$bio = $_POST ['biografia'];
-$ed = $_POST['edad'];
+$part = $_POST['nombre_partido'];
+
+$ideo = $_POST['ideologia'];
+$an = $_POST['aniofundacion'];
+$lid = $_POST['lideractual'];
+$sede = $_POST['sedecentral'];
+$site = $_POST['sitioweb'];
 
 
 
-$cadena = "UPDATE politicos SET nombre = '$nom', cargo = '$ca', fecha_nacimiento = '$naci'
-, educacion = '$edu' , biografia = '$bio' WHERE apellido = '$ape'";
+
+$cadena = "UPDATE partidospoliticos SET ideologia = '$ideo'
+, aniofundacion = '$an', lideractual = '$lid' , sedecentral = '$sede', sitioweb = '$ite' 
+WHERE nombre_partido = '$part'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 

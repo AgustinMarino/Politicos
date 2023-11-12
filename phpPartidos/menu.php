@@ -1,5 +1,5 @@
 <?php
-include "cabecera.php";
+include "../php/cabecera.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +22,7 @@ include "cabecera.php";
 
 <body>
     <div class="header text-center"> <!-- Añade la clase text-center para centrar el contenido -->
-        <h3 class="titulo">ABM Politicos</h3>
+        <h3 class="titulo">ABM Partidos</h3>
 
         <div class="menu">       
             <a href="form-altas.php">Alta</a><br>
@@ -43,7 +43,7 @@ a{
 
 }
 a:hover {
-    background-color: hsl(257, 17%, 45%); /* Violeta suave */
+    background-color: 773ebc; /* Violeta suave */
     padding:2px;
     border: 2cm;
     border-radius: 5px;    

@@ -1,4 +1,8 @@
-<?php include("php/cabecera.php"); ?>
+<?php include("php/cabecera.php"); 
+include 'php/config/conexion.php';
+?>
+
+
 
 <div class="jumbotron">
     <h1 class="display-3">Bienvenid@ </h1>
@@ -9,6 +13,4 @@
         <a class="btn btn-primary btn-lg" href="https://es.wikipedia.org/wiki/Anexo:Partidos_políticos_de_Argentina" role="button"> Seguir leyendo. . .</a>
     </p>
 </div>
-
-<?php include("php/pie.php"); ?>
       
