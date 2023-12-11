@@ -33,7 +33,6 @@ echo "<h3>".$part."</h3>".$ideo."<h3>"."</h3>".$an."</h3>"."<h3>".$lid."</h3>"."
     } else {
         print "NO se ha generado un registro"."<br>";
     }
-     else {
-    print "No se puede subir el archivo";
-}
+  
+
 ?>

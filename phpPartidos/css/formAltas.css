@@ -51,7 +51,7 @@ body {
 
 .grupoInputs label {
     padding: 5px 0;
-    color: #6a5f86; /* Violeta suave */
+    color: #ffffff; /* Violeta suave */
 }
 
 /* Estilo para el campo Edad */
@@ -59,21 +59,21 @@ body {
     /* Utilizamos el selector de tipo para especificar el campo de tipo número */
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(106, 95, 134, 0.3); /* Violeta suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Violeta suave */
     border-radius: 5px;
     transition: border-color 0.3s;
 }
 
 .grupoInputs input[type="number"]:focus {
-    border-color: #6a5f86; /* Violeta suave */
+    border-color: #525252; /* Violeta suave */
 }
 
 .btn-submit {
     width: 100%;
     max-width: 150px;
     margin-top: 20px;
-    background-color: #6a5f86; /* Violeta suave */
-    color: white;
+    background-color: #ffffff; /* Violeta suave */
+    color: rgb(102, 102, 102);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -83,7 +83,7 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #534a6f; /* Violeta suave más oscuro */
+    background-color: #303030; /* Violeta suave más oscuro */
     
 }
 
@@ -92,7 +92,7 @@ body {
 
 /* Estilos al pasar el cursor sobre los enlaces */
 a:hover {
-    background-color: #6a5f86; /* Violeta suave */
+    background-color: #777777; /* Violeta suave */
     color: white;
 }
 

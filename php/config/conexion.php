@@ -9,7 +9,7 @@ if($Conexion){
 	echo ""."<br>";
 }
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'http://localhost/politica2/Politicos/');
+    define('BASE_URL', 'http://localhost/Politicos/');
 }
 
 ?>

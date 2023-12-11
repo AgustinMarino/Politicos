@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #773ebc; /* Fondo degradado */
+    background-color: #6d6d6d; /* Fondo degradado */
     font-family: Arial, sans-serif;
     align-self:center;
 }
@@ -10,7 +10,7 @@ body {
     margin: 50px auto;
     max-width: 600px;
     padding: 20px;
-    background-color: rgba(102, 43, 148, 0.9); /* Color de fondo con transparencia */
+    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     align-self: center;
@@ -21,7 +21,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-style: italic;
-    color: #6a5f86; /* Violeta suave */
+    color: #a0a0a0; /* Violeta suave */
     align-items:center;
     text-align: initial;
 }
@@ -39,19 +39,19 @@ body {
 .grupoInputs input {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(201, 201, 201, 0.3); /* Violeta suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Violeta suave */
     border-radius: 5px;
     transition: border-color 0.3s;
 }
 
 .grupoInputs input:focus {
-    border-color: #6a5f86; /* Violeta suave */
+    border-color: #636363; /* Violeta suave */
     
 }
 
 .grupoInputs label {
     padding: 5px 0;
-    color: #6a5f86; /* Violeta suave */
+    color: #ffffff; /* Violeta suave */
 }
 
 /* Estilo para el campo Edad */
@@ -65,14 +65,14 @@ body {
 }
 
 .grupoInputs input[type="number"]:focus {
-    border-color: #6a5f86; /* Violeta suave */
+    border-color: #757575; /* Violeta suave */
 }
 
 .btn-submit {
     width: 100%;
     max-width: 150px;
     margin-top: 20px;
-    background-color: #6a5f86; /* Violeta suave */
+    background-color: #ffffff; /* Violeta suave */
     color: white;
     border: none;
     border-radius: 5px;
@@ -83,7 +83,7 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #f7f7f7; /* Violeta suave más oscuro */
+    background-color: #2c2c2c; /* Violeta suave más oscuro */
     
 }
 
